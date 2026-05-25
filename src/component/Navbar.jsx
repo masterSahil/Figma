@@ -8,10 +8,10 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto px-5 lg:px-8">
+      <div className="max-w-360 mx-auto px-6">
         <div className="flex items-center justify-between h-24">
           <div>
-            <img src={Logo} alt="Nest Text Logo" />
+            <img src={Logo} alt="Nest Text Logo" className="max-h-14 object-contain" />
           </div>
 
           <ul className="hidden lg:flex items-center gap-10 text-white">
@@ -24,7 +24,9 @@ export default function Navbar() {
 
           <button className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded">Reservation</button>
 
-          <button onClick={() => setOpen(!open)} className="lg:hidden text-white">{open ? <X size={28} /> : <Menu size={28} />}</button>
+          <button onClick={() => setOpen(!open)} className="lg:hidden text-white">
+            {open ? <X size={28} /> : <Menu size={28} />}
+            </button>
         </div>
       </div>
 

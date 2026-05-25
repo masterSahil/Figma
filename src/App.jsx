@@ -18,7 +18,7 @@ function App() {
       <FeaturesSection />
       <WorkingHours />
       <FoodShowcase />
-      <FooterSection />
+      {/* <FooterSection /> */}
     </>
   )
 }

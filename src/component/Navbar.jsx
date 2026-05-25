@@ -10,12 +10,10 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <div className="flex items-center justify-between h-24">
-          {/* Logo */}
           <div>
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="Nest Text Logo" />
           </div>
 
-          {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-10 text-white">
             {links.map((link, index) => (
               <li key={index}>
@@ -29,12 +27,10 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Desktop Button */}
           <button className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded">
             Reservation
           </button>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setOpen(!open)}
             className="lg:hidden text-white"
@@ -44,7 +40,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="lg:hidden bg-black/95 backdrop-blur-md">
           <ul className="flex flex-col text-white p-6 gap-5">

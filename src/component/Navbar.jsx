@@ -17,26 +17,14 @@ export default function Navbar() {
           <ul className="hidden lg:flex items-center gap-10 text-white">
             {links.map((link, index) => (
               <li key={index}>
-                <a
-                  href="#"
-                  className="hover:text-orange-400 transition"
-                >
-                  {link}
-                </a>
+                <a href="#" className="hover:text-orange-400 transition">{link}</a>
               </li>
             ))}
           </ul>
 
-          <button className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded">
-            Reservation
-          </button>
+          <button className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded">Reservation</button>
 
-          <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden text-white"
-          >
-            {open ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          <button onClick={() => setOpen(!open)} className="lg:hidden text-white">{open ? <X size={28} /> : <Menu size={28} />}</button>
         </div>
       </div>
 
@@ -49,9 +37,7 @@ export default function Navbar() {
               </li>
             ))}
 
-            <button className="bg-orange-500 py-3 rounded mt-2">
-              Reservation
-            </button>
+            <button className="bg-orange-500 py-3 rounded mt-2">Reservation</button>
           </ul>
         </div>
       )}

@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "/images/hero/banner.png"
 
 export default function HeroSection() {
   return (

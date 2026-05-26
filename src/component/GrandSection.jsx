@@ -112,12 +112,8 @@ export default function FoodShowcase() {
         </div>
       </div>
 
-      <div className="relative h-[420px]">
-        <img
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+      <div className="relative h-105">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000" alt="Food Ordering Background Image" className="absolute inset-0 w-full h-full object-cover" />
 
         <div className="absolute inset-0 bg-black/50" />
 
@@ -141,22 +137,22 @@ export default function FoodShowcase() {
           </div>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-[-170px] z-30 flex gap-8">
+        <div className="absolute left-1/2 -translate-x-1/2 -bottom-42.5 z-30 flex gap-8">
           <img
             src={Phone1}
             alt=""
-            className="w-[220px] drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]"
+            className="w-55 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]"
           />
 
           <img
             src={Phone2}
             alt=""
-            className="w-[220px] mt-16 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]"
+            className="w-55 mt-16 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]"
           />
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-[250px] pb-28">
+      <div className="max-w-7xl mx-auto px-6 pt-62.5 pb-28">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-[#d89b52] uppercase tracking-[3px] text-xs">
             Menu
@@ -181,7 +177,7 @@ export default function FoodShowcase() {
               <img
                 src={food.image}
                 alt=""
-                className="w-full h-[260px] object-cover"
+                className="w-full h-65 object-cover"
               />
 
               <div className="p-6">

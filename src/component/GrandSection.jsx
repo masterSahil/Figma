@@ -2,6 +2,9 @@ import React from "react";
 import BGIMAGE from '/images/foodOrder/bg-image.png'
 import Phone1 from '/images/foodOrder/phone1.png'
 import Phone2 from '/images/foodOrder/phone2.png'
+import Burger from '/images/explore/burger.png'
+import Pasta from '/images/explore/pasta.png'
+import Salad from '/images/explore/salad.png'
 
 export default function FoodShowcase() {
   const testimonials = [
@@ -28,22 +31,19 @@ export default function FoodShowcase() {
 
   const foods = [
     {
-      image:
-        "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?q=80&w=1200",
+      image: Pasta,
       title: "Raspberry French Toast",
       price: "$12.50",
       oldPrice: "$13.20",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200",
+      image: Burger,
       title: "Raspberry French Toast",
       price: "$12.50",
       oldPrice: "$13.20",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200",
+      image: Salad,
       title: "Raspberry French Toast",
       price: "$12.50",
       oldPrice: "$13.20",
@@ -132,9 +132,7 @@ export default function FoodShowcase() {
                     <path d="M17.0223 19.9681L25.6835 11.4192L6.86376 0.636475C6.15567 0.221805 5.35034 0.00219444 4.52977 8.6686e-06C2.49344 -0.00394893 0.703195 1.34757 0.149414 3.30729L17.0223 19.9681Z" fill="#34A853"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0">
-                      <rect width="36.1837" height="40" fill="white"/>
-                    </clipPath>
+                    <clipPath id="clip0"> <rect width="36.1837" height="40" fill="white"/> </clipPath>
                   </defs>
                 </svg>
 
@@ -168,56 +166,33 @@ export default function FoodShowcase() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-62.5 pb-28">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-[#d89b52] uppercase tracking-[3px] text-xs">
-            Menu
+      <div className="max-w-7xl mx-auto px-6 py-24 lg:py-28 mt-10">
+        <div className="text-center max-w-3xl mx-auto mb-14 lg:mb-20">
+          <span className="relative inline-block text-white uppercase text-[16px] font-medium">
+            Menu <span className="absolute left-1/2 -translate-x-1/2 top-7.5 w-15 h-0.5 bg-[#d89b52]" />
           </span>
 
-          <h2 className="text-white text-5xl font-bold mt-4 mb-6">
-            Explore Our Foods
-          </h2>
-
-          <p className="text-gray-400">
-            Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc
-            varius. Facilisis eget cras sit semper sit enim.
-          </p>
+          <h2 className="text-white text-4xl font-semibold mt-8 mb-5">Explore Our Foods</h2>
+          <p className="text-[#797B78] text-sm font-medium sm:text-base leading-6 max-w-3xl mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
           {foods.map((food, index) => (
-            <div
-              key={index}
-              className="bg-[#081920] rounded-xl overflow-hidden"
-            >
-              <img
-                src={food.image}
-                alt=""
-                className="w-full h-65 object-cover"
-              />
+            <div key={index} className="group bg-[#081920] rounded-2xl overflow-hidden border border-white/5 shadow-[0_15px_40px_rgba(0,0,0,.35)] transition-all duration-500 hover:shadow-[0_20px_60px_rgba(216,155,82,.18)]" >
+              <div className="overflow-hidden">
+                <img src={food.image} alt={food.title} className="w-full h-65 sm:h-75 object-cover transition-transform duration-700 group-hover:scale-110" />
+              </div>
 
               <div className="p-6">
-                <h3 className="text-white text-xl font-semibold mb-3">
-                  {food.title}
-                </h3>
+                <h3 className="text-[#D68240] text-[24px] font-semibold leading-tight mb-1">{food.title}</h3>
+                <p className="text-[#797B78] text-[16px] font-medium mb-5">Time: 10 - 15 Minutes | Serve: 1</p>
 
-                <p className="text-gray-500 text-sm mb-4">
-                  Time: 10 - 15 Minutes | Serve: 1
-                </p>
-
-                <div className="flex items-center gap-3 mb-5">
-                  <span className="text-[#d89b52] font-bold text-xl">
-                    {food.price}
-                  </span>
-
-                  <span className="line-through text-gray-500">
-                    {food.oldPrice}
-                  </span>
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-[#d89b52] font-bold text-2xl">{food.price}</span>
+                  <span className="line-through text-[#797B78] font-semibold text-2xl">{food.oldPrice}</span>
                 </div>
 
-                <button className="bg-[#d89b52] text-white px-5 py-2 text-sm font-medium">
-                  Order Now
-                </button>
+                <button className="bg-[#D68240] px-6 py-3 rounded-[4px] text-[16px] font-medium transition-all duration-300 hover:bg-[#b96402] hover:text-white hover:shadow-lg hover:shadow-[#d89b52]/30 active:scale-95">Order Now</button>
               </div>
             </div>
           ))}

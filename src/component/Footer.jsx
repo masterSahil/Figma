@@ -1,165 +1,85 @@
-import React from "react";
-// import {
-// //   Facebook,
-//   Twitter,
-//   Instagram,
-//   Linkedin,
-// } from "lucide-react";
+import React from 'react'
+import Logo from '/images/logo/logo.png'
 
-export default function FooterSection() {
+const Footer = () => {
   return (
-    <footer className="bg-[#031118]">
-      {/* Newsletter Banner */}
-      <section
-        className="relative min-h-[450px] bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/65" />
+    <>
+      <section className="relative">
+        <div className="relative bg-footer-img h-full flex items-center bg-cover bg-no-repeat bg-center">
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24">
-          <div className="max-w-4xl">
-            <span className="uppercase tracking-[3px] text-sm text-white relative pb-3 inline-block">
-              News Letter
-              <span className="absolute left-0 bottom-0 w-12 h-[2px] bg-[#d88a45]" />
-            </span>
-
-            <h2 className="text-white text-5xl lg:text-6xl font-bold mt-6 mb-6">
-              Subscribe Our Newsletter
-            </h2>
-
-            <p className="text-gray-300 text-lg max-w-3xl leading-8 mb-10">
-              Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc
-              varius. Facilisis eget cras sit semper sit enim. Turpis aliquet
-              at ac eu donec ut.
-            </p>
-
-            <form className="flex flex-col md:flex-row gap-4 max-w-4xl">
-              <input
-                type="email"
-                placeholder="Type here"
-                className="flex-1 h-16 px-8 bg-[#0b2a30] text-white placeholder:text-gray-400 outline-none"
-              />
-
-              <button className="h-16 px-10 bg-[#d88a45] text-white font-semibold hover:bg-[#c67d3d] transition">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-4 gap-16">
-            {/* Company */}
-            <div>
-              <h2 className="text-white text-3xl font-bold mb-8">
-                TasteNest
-              </h2>
-
-              <p className="text-gray-400 leading-8 mb-10">
-                Lorem ipsum dolor sit amet consectetur. Tristique cursus morbi
-                nibh nec et vulputate. Turpis tortor nisi imperdiet quis
-                accumsan.
-              </p>
-
-              <div className="flex gap-5">
-                {[
-                  
-                ].map((Icon, index) => (
-                  <div
-                    key={index}
-                    className="w-14 h-14 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-[#d88a45] hover:text-white transition"
-                  >
-                    
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Opening Hours */}
-            <div>
-              <h3 className="text-white text-2xl font-semibold mb-8">
-                Opening Restaurant
-              </h3>
-
-              <div className="space-y-5 text-gray-400">
-                <p>Sa - We: 09:00am - 10:00pm</p>
-                <p>Thu - We: 09:00am - 10:00pm</p>
-                <p>Friday Closed</p>
-              </div>
-            </div>
-
-            {/* Links */}
-            <div>
-              <h3 className="text-white text-2xl font-semibold mb-8">
-                User Link
-              </h3>
-
-              <ul className="space-y-5 text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-[#d88a45]">
-                    About Us
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="hover:text-[#d88a45]">
-                    Contact Us
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="hover:text-[#d88a45]">
-                    Order Delivery
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="hover:text-[#d88a45]">
-                    Payment & Tax
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="hover:text-[#d88a45]">
-                    Terms of Services
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h3 className="text-white text-2xl font-semibold mb-8">
-                Contact Us
-              </h3>
-
-              <div className="text-gray-400 leading-8 mb-10">
-                <p>543 Country Club Ave,</p>
-                <p>NC 27587, London, UK</p>
-                <p>+1257 6541120</p>
+          <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-108 lg:py-10 w-full">
+            <div className="max-w-4xl">
+              <div className="flex flex-col items-start gap-3 mb-6">
+                <span className="text-white uppercase tracking-wider text-[16px] font-semibold">News letter</span>
+                <div className="w-15 h-0.5 bg-orange-500"></div>
               </div>
 
-              <div className="bg-white rounded-md p-2 flex">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="flex-1 px-5 outline-none text-gray-700"
-                />
+              <h2 className="text-white text-4xl font-semibold mb-6">Subscribe Our Newsletter</h2>
+              <p className="text-[#797B78] max-w-3xl font-medium text-base md:text-lg leading-relaxed mb-10">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut.</p>
 
-                <button className="bg-[#d88a45] text-white px-8 py-3 rounded">
-                  Subscribe
-                </button>
+              <div className="flex flex-col sm:flex-row gap-4 max-w-4xl">
+                <input type="email" placeholder="Type here" className="flex-1 h-16 px-7 text-xl bg-[#182F31] text-[#B2BBBB] placeholder:text-[#B2BBBB] rounded-lg outline-none" />
+
+                <button className="h-16 px-12 bg-[#D68240] text-[16px] hover:bg-[#c77733] transition text-white font-medium rounded-sm">Subscribe</button>
               </div>
             </div>
           </div>
         </div>
+
+        <footer className="bg-[#121A1D]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-14">
+              <div>
+                <img src={Logo} alt="Taste Nest Logo" />
+                <p className="text-[#797B78] leading-6 text-sm font-medium mb-10">Lorem ipsum dolor sit amet consectetur. Tristique cursus morbi nibh nec et vulputate. Turpis tortor nisi imperdiet quis accumsan. Ligula netus amet leo ultricies. Neque venenatis magnis amet eget sagittis leo enim.</p>
+
+                <div className="flex gap-4">
+                  {["F", "T", "I", "L"].map((item) => (
+                    <div key={item} className="w-14 h-14 rounded-full bg-white flex items-center justify-center tex font-bold text-xl cursor-pointer hover:scale-105 transition">{item}</div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-white text-[16px] font-semibold mb-4">Opening Restaurant</h4>
+                <ul className="space-y-3 text-[#797B78] text-sm font-medium">
+                  <li>Sa - We: 09:00am - 10:00pm</li>
+                  <li>Thu - We: 09:00am - 10:00pm</li>
+                  <li>Friday Closed</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-white text-[16px] font-semibold mb-4">User Link</h4>
+                <ul className="space-y-3 text-[#797B78] text-sm font-medium">
+                  <li><a href="#" className="hover:text-orange-400">About Us</a></li>
+                  <li><a href="#" className="hover:text-orange-400">Contact Us</a></li>
+                  <li><a href="#" className="hover:text-orange-400">Order Delivery</a></li>
+                  <li><a href="#" className="hover:text-orange-400">Payment & Tax</a></li>
+                  <li><a href="#" className="hover:text-orange-400">Terms Of Services</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-white text-[16px] font-semibold mb-4">Contact Us</h4>
+                <div className="text-[#797B78] text-sm font-medium leading-6 mb-4">
+                  <p>543 Country Club Ave,</p>
+                  <p>NC 27587, London, UK</p>
+                  <p>+1257 6541120</p>
+                </div>
+
+                <div className="bg-white rounded-lg p-1.5 flex items-center overflow-hidden w-full max-w-xl">
+                  <input type="email" placeholder="Email" className="flex-1 min-w-0 px-4 py-2 outline-none text-[#6A6A6A] text-md font-medium bg-transparent" />
+
+                  <button className="shrink-0 bg-[#d4833e] hover:bg-[#c77733] transition font-medium text-md text-white px-8 py-2 rounded-md">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </section>
-    </footer>
-  );
+    </>
+  )
 }
+
+export default Footer

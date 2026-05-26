@@ -20,9 +20,9 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#111111]/50 backdrop-blur-xl border-b shadow-lg" : "bg-transparent" }`}>
       <div className="max-w-360 mx-auto px-6">
         <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-20" : "h-24"}`}>
-          <div>
+          <a href="/">
             <img src={Logo} alt="Nest Text Logo" className="max-h-30 object-contain" />
-          </div>
+          </a>
 
           <ul className="hidden lg:flex items-center gap-10 text-white">
             {links.map((link, index) => (

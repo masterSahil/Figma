@@ -122,7 +122,7 @@ export default function FoodShowcase() {
             </h2>
 
             <div className="flex flex-wrap gap-5 mt-12">
-              <button className="group bg-white rounded-xl px-6 py-4 flex items-center gap-4 shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <button className="group bg-white rounded-xl p-4 flex items-center gap-4 shadow-lg hover:-translate-y-1 transition-all duration-300">
                 
                 <svg width="36" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
                   <g clipPath="url(#clip0)">
@@ -161,7 +161,7 @@ export default function FoodShowcase() {
 
         <div className="flex mr-20">
           <img src={Phone1} alt="Food Delivery Home Page Screen"
-            className="w-64 h-140 -mt-18 px-1 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]" />
+            className="w-64 h-142 -mt-20 px-1 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]" />
 
           <img src={Phone2} alt="Food Delivery Details Page Screen"
             className="w-64 h-140 px-1 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]" />

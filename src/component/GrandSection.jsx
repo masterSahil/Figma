@@ -1,4 +1,6 @@
 import React from "react";
+import Phone1 from '/images/foodOrder/phone1.png'
+import Phone2 from '/images/foodOrder/phone2.png'
 
 export default function FoodShowcase() {
   const testimonials = [
@@ -49,8 +51,6 @@ export default function FoodShowcase() {
 
   return (
     <section className="relative bg-[#031118] overflow-hidden">
-      {/* ================= TESTIMONIALS ================= */}
-
       <div className="max-w-7xl mx-auto px-6 pt-28">
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-[#d89b52] uppercase tracking-[3px] text-xs">
@@ -91,15 +91,11 @@ export default function FoodShowcase() {
           ))}
         </div>
 
-        {/* dots */}
-
         <div className="flex justify-center gap-3 mt-10">
           <div className="w-2 h-2 rounded-full bg-[#d89b52]" />
           <div className="w-2 h-2 rounded-full bg-white/20" />
           <div className="w-2 h-2 rounded-full bg-white/20" />
         </div>
-
-        {/* stats */}
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 text-center mt-24 pb-24">
           {stats.map((item, index) => (
@@ -115,8 +111,6 @@ export default function FoodShowcase() {
           ))}
         </div>
       </div>
-
-      {/* ================= APP DOWNLOAD ================= */}
 
       <div className="relative h-[420px]">
         <img
@@ -147,24 +141,20 @@ export default function FoodShowcase() {
           </div>
         </div>
 
-        {/* Floating Phones */}
-
         <div className="absolute left-1/2 -translate-x-1/2 bottom-[-170px] z-30 flex gap-8">
           <img
-            src="https://i.ibb.co/JFt7x3v/mobile1.png"
+            src={Phone1}
             alt=""
             className="w-[220px] drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]"
           />
 
           <img
-            src="https://i.ibb.co/H7C8v5V/mobile2.png"
+            src={Phone2}
             alt=""
             className="w-[220px] mt-16 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]"
           />
         </div>
       </div>
-
-      {/* ================= FOODS ================= */}
 
       <div className="max-w-7xl mx-auto px-6 pt-[250px] pb-28">
         <div className="text-center max-w-3xl mx-auto mb-20">

@@ -7,21 +7,23 @@ const Footer = () => {
     <>
       <section className="relative">
         <div className="relative bg-footer-img h-full flex items-center bg-cover bg-no-repeat bg-center">
-
-          <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-108 lg:py-10 w-full">
+          <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 min-h-auto lg:min-h-108 py-16 sm:py-20 lg:py-10 w-full">
+            
             <div className="max-w-4xl">
-              <div className="flex flex-col items-start gap-3 mb-6">
-                <span className="text-white uppercase tracking-wider text-[16px] font-semibold">News letter</span>
+              <div className="flex flex-col items-start gap-3 mb-5 sm:mb-6">
+                <span className="text-white uppercase tracking-wider text-sm sm:text-[16px] font-semibold">News letter</span>
                 <div className="w-15 h-0.5 bg-orange-500"></div>
               </div>
 
-              <h2 className="text-white text-4xl font-semibold mb-6">Subscribe Our Newsletter</h2>
-              <p className="text-[#797B78] max-w-3xl font-medium text-base md:text-lg leading-relaxed mb-10">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut.</p>
+              <h2 className="text-white text-[32px] leading-tight sm:text-4xl font-semibold mb-5 sm:mb-6">Subscribe Our Newsletter</h2>
+              <p className="text-[#797B78] max-w-3xl font-medium text-[15px] sm:text-base md:text-lg leading-7 sm:leading-relaxed mb-8 sm:mb-10">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut.</p>
 
               <div className="flex flex-col sm:flex-row gap-4 max-w-4xl">
-                <input type="email" placeholder="Type here" className="flex-1 h-16 px-7 text-xl bg-[#182F31] text-[#B2BBBB] placeholder:text-[#B2BBBB] rounded-lg outline-none" />
+                <input type="email" placeholder="Type here" className="w-full flex-1 h-14 sm:h-16 px-5 sm:px-7 text-base sm:text-xl bg-[#182F31] text-[#B2BBBB] placeholder:text-[#B2BBBB] rounded-lg outline-none" />
 
-                <button className="h-16 px-12 bg-[#D68240] text-[16px] hover:bg-[#c77733] transition text-white font-medium rounded-sm">Subscribe</button>
+                <button className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-12 bg-[#D68240] hover:bg-[#c77733] transition text-white text-[15px] sm:text-[16px] font-medium rounded-sm">
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>

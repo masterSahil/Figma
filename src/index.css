@@ -3,6 +3,9 @@
 body{
     font-family: poppins;
 }
+*{
+    scroll-behavior: smooth;
+}
 .banner-img-set{
     background-image: url('/images/hero/banner.png');
 }

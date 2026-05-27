@@ -5,7 +5,7 @@ const Footer = () => {
   
   return (
     <>
-      <section className="relative">
+      <section id='Contact' className="relative">
         <div className="relative bg-footer-img h-full flex items-center bg-cover md:bg-cover md:bg-center bg-no-repeat">
           <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 min-h-auto lg:min-h-108 py-16 sm:py-20 lg:py-10 w-full">
             

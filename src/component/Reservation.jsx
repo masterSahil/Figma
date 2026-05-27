@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WorkingHours() {
   return (
-    <section className="relative h-150 bg-working-hours-img bg-cover bg-center bg-no-repeat">
+    <section id="Shop" className="relative h-150 bg-working-hours-img bg-cover bg-center bg-no-repeat">
       <div className=" h-full max-w-7xl 2xl:max-w-360 mx-auto">
         <div className="grid lg:grid-cols-2 h-full items-center">
           <div>

@@ -27,7 +27,7 @@ export default function Navbar() {
           <ul className="hidden lg:flex items-center gap-10 text-white">
             {links.map((link, index) => (
               <li key={index}>
-                <a href="#" className="hover:text-orange-400 transition">{link}</a>
+                <a href={`#${link}`} className="hover:text-orange-400 transition">{link}</a>
               </li>
             ))}
           </ul>

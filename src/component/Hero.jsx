@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen bg-cover banner-img-set bg-center" >
+    <section id="Home" className="relative h-screen bg-cover banner-img-set bg-center" >
       <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
         <div>
           <p className="uppercase text-white font-medium text-sm mb-5"> Hello, New Friend </p>

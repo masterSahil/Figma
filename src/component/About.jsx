@@ -27,7 +27,7 @@ const data = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-[#06141b] py-24 overflow-hidden">
+    <section id="Blog" className="bg-[#06141b] py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid gap-20">
           {data.map((item, index) => (

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <section className="relative">
-        <div className="relative bg-footer-img h-full flex items-center bg-cover bg-no-repeat bg-center">
+        <div className="relative bg-footer-img h-full flex items-center bg-cover md:bg-cover md:bg-center bg-no-repeat">
           <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 min-h-auto lg:min-h-108 py-16 sm:py-20 lg:py-10 w-full">
             
             <div className="max-w-4xl">
@@ -19,7 +19,7 @@ const Footer = () => {
               <p className="text-[#797B78] max-w-3xl font-medium text-[15px] sm:text-base md:text-lg leading-7 sm:leading-relaxed mb-8 sm:mb-10">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut.</p>
 
               <div className="flex flex-col sm:flex-row gap-4 max-w-4xl">
-                <input type="email" placeholder="Type here" className="w-full flex-1 h-14 sm:h-16 px-5 sm:px-7 text-base sm:text-xl bg-[#182F31] text-[#B2BBBB] placeholder:text-[#B2BBBB] rounded-lg outline-none" />
+                <input type="email" placeholder="Type here" className="w-full h-16 sm:h-16 px-5 sm:px-7 text-base sm:text-xl bg-[#182F31] text-[#B2BBBB] placeholder:text-[#B2BBBB] rounded-lg outline-none" />
 
                 <button className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-12 bg-[#D68240] hover:bg-[#c77733] transition text-white text-[15px] sm:text-[16px] font-medium rounded-sm">
                   Subscribe

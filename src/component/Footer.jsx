@@ -2,6 +2,11 @@ import React from 'react'
 import Logo from '/images/logo/logo.png'
 
 const Footer = () => {
+  const icons = [
+    {
+      
+    }
+  ]
   return (
     <>
       <section className="relative">
@@ -27,15 +32,15 @@ const Footer = () => {
         </div>
 
         <footer className="bg-[#121A1D]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20">
             <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-14">
               <div>
                 <img src={Logo} alt="Taste Nest Logo" />
                 <p className="text-[#797B78] leading-6 text-sm font-medium mb-10">Lorem ipsum dolor sit amet consectetur. Tristique cursus morbi nibh nec et vulputate. Turpis tortor nisi imperdiet quis accumsan. Ligula netus amet leo ultricies. Neque venenatis magnis amet eget sagittis leo enim.</p>
 
                 <div className="flex gap-4">
-                  {["F", "T", "I", "L"].map((item) => (
-                    <div key={item} className="w-14 h-14 rounded-full bg-white flex items-center justify-center tex font-bold text-xl cursor-pointer hover:scale-105 transition">{item}</div>
+                  {["facebook", "twitter", "instagram", "linkedin"].map((val, item) => (
+                    <img key={item} src={`/images/footer/${val}.png`} className="w-12 h-12 rounded-full bg-white flex items-center justify-center tex font-bold text-xl cursor-pointer hover:scale-102 transition"></img>
                   ))}
                 </div>
               </div>
@@ -68,7 +73,7 @@ const Footer = () => {
                   <p>+1257 6541120</p>
                 </div>
 
-                <div className="bg-white rounded-lg p-1.5 flex items-center overflow-hidden w-full max-w-xl">
+                <div className="bg-white rounded-lg p-1.5 flex items-center overflow-hidden w-full max-w-[290px] sm:max-w-xl">
                   <input type="email" placeholder="Email" className="flex-1 min-w-0 px-4 py-2 outline-none text-[#6A6A6A] text-md font-medium bg-transparent" />
 
                   <button className="shrink-0 bg-[#d4833e] hover:bg-[#c77733] transition font-medium text-md text-white px-8 py-2 rounded-md">Subscribe</button>

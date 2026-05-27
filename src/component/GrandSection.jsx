@@ -117,11 +117,11 @@ export default function FoodShowcase() {
       </div>
     </div>
 
-      <div className="relative h-120 px-10 flex justify-around">
+      <div className="relative h-120 px-10 flex flex-col md:flex-row justify-around">
         <img src={BGIMAGE} alt="Food Ordering Background Image" className="absolute inset-0 w-full h-full object-cover" />
         <div className="relative z-10 max-w-6xl h-full px-6 flex items-center">
           <div>
-            <h2 className="text-white text-5xl font-semibold leading-tight">Simple Way To <br /> Order Your Foods</h2>
+            <h2 className="text-white text-3xl lg:text-5xl font-semibold leading-tight">Simple Way To <br /> Order Your Foods</h2>
 
             <div className="flex flex-wrap gap-5 mt-12">
               <button className="group bg-white rounded-xl p-4 flex items-center gap-4 shadow-lg hover:-translate-y-1 transition-all duration-300">
@@ -161,10 +161,10 @@ export default function FoodShowcase() {
 
         <div className="flex mr-20">
           <img src={Phone1} alt="Food Delivery Home Page Screen"
-            className="w-64 h-142 -mt-20 px-1 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]" />
+            className="w-50 h-130 lg:w-64 lg:h-142 -mt-20 px-1 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]" />
 
           <img src={Phone2} alt="Food Delivery Details Page Screen"
-            className="w-64 h-140 px-1 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]" />
+            className="w-50 h-130 lg:w-64 lg:h-140 px-1 drop-shadow-[0_20px_50px_rgba(0,0,0,.5)]" />
         </div>
       </div>
 

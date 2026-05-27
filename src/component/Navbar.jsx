@@ -32,7 +32,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <button className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded">Reservation</button>
+          <a href="#Reservation" className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded">Reservation</a>
 
           <button onClick={() => setOpen(!open)} className="lg:hidden text-white">
             {open ? <X size={28} /> : <Menu size={28} />}

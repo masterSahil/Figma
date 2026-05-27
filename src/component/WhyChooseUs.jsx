@@ -23,7 +23,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section id="Pages" className="bg-[#041219] py-20 overflow-hidden">
+    <section id="Shop" className="bg-[#041219] py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-24">
           <span className="inline-block text-white text-[16px] font-medium uppercase relative pb-3"> Features

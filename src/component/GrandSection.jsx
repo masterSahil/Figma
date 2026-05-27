@@ -36,7 +36,7 @@ export default function FoodShowcase() {
   ];
 
   return (
-    <section className="relative bg-[#031118] overflow-hidden">
+    <section id="Pages" className="relative bg-[#031118] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-28 lg:py-32">
       <div className="text-center max-w-3xl mx-auto">
         <span className="relative inline-block text-white uppercase text-[16px] tracking-[3px] font-medium">

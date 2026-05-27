@@ -2,11 +2,7 @@ import React from 'react'
 import Logo from '/images/logo/logo.png'
 
 const Footer = () => {
-  const icons = [
-    {
-      
-    }
-  ]
+  
   return (
     <>
       <section className="relative">
@@ -73,7 +69,7 @@ const Footer = () => {
                   <p>+1257 6541120</p>
                 </div>
 
-                <div className="bg-white rounded-lg p-1.5 flex items-center overflow-hidden w-full max-w-[290px] sm:max-w-xl">
+                <div className="bg-white rounded-lg p-1.5 flex items-center overflow-hidden w-full max-w-72.5 sm:max-w-xl">
                   <input type="email" placeholder="Email" className="flex-1 min-w-0 px-4 py-2 outline-none text-[#6A6A6A] text-md font-medium bg-transparent" />
 
                   <button className="shrink-0 bg-[#d4833e] hover:bg-[#c77733] transition font-medium text-md text-white px-8 py-2 rounded-md">Subscribe</button>

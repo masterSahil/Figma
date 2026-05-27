@@ -155,7 +155,7 @@ export default function FoodShowcase() {
               </button>
             </div>
           </div>
-        </div>
+        </div> 
 
         <div className="flex justify-center md:mr-25 lg:mr-20">
           <img src={Phone1} alt="Food Delivery Home Page Screen"

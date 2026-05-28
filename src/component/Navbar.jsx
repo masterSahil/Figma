@@ -49,7 +49,7 @@ export default function Navbar() {
               </li>
             ))}
 
-            <button className="bg-orange-500 py-3 rounded mt-2">Reservation</button>
+            <a href="#Reservation" className="bg-orange-500 p-3 rounded mt-2">Reservation</a>
           </ul>
         </div>
       )}

@@ -45,7 +45,7 @@ export default function Navbar() {
           <ul className="flex flex-col text-white p-6 gap-5">
             {links.map((link, index) => (
               <li key={index}>
-                <a href="#">{link}</a>
+                <a href={`#${link}`}>{link}</a>
               </li>
             ))}
 
